@@ -20,7 +20,7 @@ The protocol constructor should contain its parameters (ex: d_out,d_in, etc.). *
 
 
 /*                   Scoring Protocol                          
-Each scoring protocol has a function to select or discard neighbors. in concrete terms,
+Each scoring protocol has a function to select or discard neighbors. in concrete terms, the method
 SelectNeighbors returns an array of neighbors to select (true or false for given index)
 false means the neighbors is to be dropped. by default, base class returns true for all neighbors,
 and therefore, should be overriden to prescribe each protocol : perigee vanilla, perigee subset, EdgePriority etc..
@@ -200,7 +200,7 @@ class PerigeeSubset : public ScoringProtocol {
             // };
 
             // un comportamiento default: si hay menos vecinos salientes que vecinos a evaluar, se asume que todos estos vecinos se conservan
-            //      (y el nodo generará una request para lleanr todos los vecinos salientes)
+            //      (y el nodo generará una request para llenar todos los vecinos salientes)
             // en la práctica esto no sucede mucho, dado que el protocolo de reconexión, la gran mayoría de las veces, obtiene los 8 vecinos
             // y eso supera scoredNeighbors (=5).
             if(data.neighbors < scoredNeighbors){
