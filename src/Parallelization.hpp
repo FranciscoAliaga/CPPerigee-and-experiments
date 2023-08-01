@@ -1,10 +1,11 @@
+#ifndef PARALLELIZATION_UTILS
+#define PARALLELIZATION_UTILS
+
 #include <iostream>
 #include <thread>
 #include <utility> // std::pair
 #include <vector>
 
-#ifndef PARALLELIZATION_UTILS
-#define PARALLELIZATION_UTILS
 
 // parallelization utils
 const unsigned int DEFAULT_PARALLELIZATION_THREADS = 4;

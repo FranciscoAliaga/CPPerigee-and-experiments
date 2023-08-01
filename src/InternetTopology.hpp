@@ -1,3 +1,6 @@
+#ifndef INTERNET_TOPOLOGY_H
+#define INTERNET_TOPOLOGY_H
+
 #include "Constants.hpp"
 
 #include <algorithm>
@@ -8,8 +11,6 @@
 #include <utility>
 #include <vector>
 
-#ifndef INTERNET_TOPOLOGY_H
-#define INTERNET_TOPOLOGY_H
 
 constexpr double pi    = 3.141592653;
 constexpr double sqrt2 = 1.41412;
@@ -143,18 +144,7 @@ class FlatTopology : public InternetTopology{
                 res += std::pow(X[j]-Y[j],p);
             }
             double x = std::pow(res,invp);
-#ifndef HUBIFY_FLAT_TOPOLOGY
             return x;
-#else
-            const double l1 = 1./20.;
-            const double l2 = 1./5.;
-
-            if(x<l1) return x;
-            else if (x<l2){
-                return 4.*x;
-            }
-            return 3./4. + x/4.;
-#endif
         }
 
         /* returns the pairwise internet latency between two nodes in the network. */

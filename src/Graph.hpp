@@ -1,3 +1,6 @@
+#ifndef GRAPH_H
+#define GRAPH_H
+
 #include "Constants.hpp"
 
 #include <cmath>
@@ -9,8 +12,6 @@
 #include <string>
 #include <vector>
 
-#ifndef GRAPH_H
-#define GRAPH_H
 
 /* Graph: An adjacency-list based data structure for low-degree / sparse directed graphs
 in this graph, a node can be reached from others via in_neighbors and can reach others via out_neighbors

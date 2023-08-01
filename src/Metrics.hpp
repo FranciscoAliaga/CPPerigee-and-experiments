@@ -1,3 +1,6 @@
+#ifndef METRICS_H
+#define METRICS_H
+
 #include "Constants.hpp"
 #include "Graph.hpp"
 #include "GraphAlgorithms.hpp"
@@ -9,8 +12,6 @@
 #include <limits>
 #include <vector>
 
-#ifndef METRICS_H
-#define METRICS_H
 
 class propagationLatencyEdges {
     public:

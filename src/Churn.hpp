@@ -1,3 +1,6 @@
+#ifndef CHURN
+#define CHURN
+
 #include <algorithm>
 #include <random>
 #include <functional>
@@ -7,8 +10,6 @@
 
 #include "Network.hpp"
 
-#ifndef CHURN
-#define CHURN
 
 class ChurnSimulation {
     using ii = unsigned int;

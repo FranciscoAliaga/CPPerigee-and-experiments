@@ -1,3 +1,6 @@
+#ifndef PERCENTILE_H
+#define PERCENTILE_H
+
 #include "Constants.hpp"
 
 #include <algorithm>
@@ -7,8 +10,6 @@
 #include <queue> // std::priority_queue
 #include <vector>
 
-#ifndef PERCENTILE_H
-#define PERCENTILE_H
 
 class Percentile{
     public:

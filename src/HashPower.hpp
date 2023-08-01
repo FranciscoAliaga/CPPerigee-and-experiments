@@ -1,3 +1,6 @@
+#ifndef HASHPOWER_H
+#define HASHPOWER_H
+
 #include "Constants.hpp"
 
 #include <string>
@@ -8,8 +11,6 @@
 #include <vector>
 
 
-#ifndef HASHPOWER_H
-#define HASHPOWER_H
 
 /* Takes care of producing the source of a block in the network, given a distribution of hashpower from the nodes.
 Can be updated to support varying hash power capabilities as well as deactivating unactive nodes.

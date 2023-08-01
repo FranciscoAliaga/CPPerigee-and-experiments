@@ -1,3 +1,6 @@
+#ifndef NETWORK_OBJECTS_H
+#define NETWORK_OBJECTS_H
+
 #include "Constants.hpp"
 #include "Graph.hpp"
 #include "GraphAlgorithms.hpp"
@@ -17,8 +20,6 @@
 #include <unordered_map>
 #include <vector>
 
-#ifndef NETWORK_OBJECTS_H
-#define NETWORK_OBJECTS_H
 
 // class declarations
 

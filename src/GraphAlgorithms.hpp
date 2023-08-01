@@ -1,3 +1,6 @@
+#ifndef GRAPH_ALGORITHMS_H
+#define GRAPH_ALGORITHMS_H
+
 #include "Constants.hpp"
 #include "Graph.hpp"
 #include "InternetTopology.hpp"
@@ -13,8 +16,6 @@
 #include <stdexcept>
 #include <vector>
 
-#ifndef GRAPH_ALGORITHMS_H
-#define GRAPH_ALGORITHMS_H
 
 // used to store graph algorithm predecessors in a safe way
 class pred {

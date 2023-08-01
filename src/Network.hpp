@@ -1,3 +1,6 @@
+#ifndef NETWORK_H
+#define NETWORK_H
+
 #include "Constants.hpp"
 #include "Graph.hpp"
 #include "GraphAlgorithms.hpp"
@@ -18,8 +21,6 @@
 #include <unordered_map>
 #include <vector>
 
-#ifndef NETWORK_H
-#define NETWORK_H
 
 void Network::run(unsigned int total_blocks, unsigned int blocks_per_loop, int full_message, bool full_visibility, bool update_visibility_flag){
     auto rounds = total_blocks / blocks_per_loop ;

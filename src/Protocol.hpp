@@ -1,3 +1,6 @@
+#ifndef PROTOCOL_H
+#define PROTOCOL_H
+
 #include "Constants.hpp"
 
 #include "PercentileTools.hpp"
@@ -11,8 +14,6 @@
 #include <string>
 #include <vector>
 
-#ifndef PROTOCOL_H
-#define PROTOCOL_H
 
 
 /* Each protocol should be initialized and then referenced by nodes who use the reference to perform their tasks.
