@@ -35,11 +35,11 @@ def get_degree_data(data):
 data = get_data(sys.argv[1])
 d_out,d_in = get_degree_data(data)
 
-nbins = 14
+nbins = 20
 
 bins  = plt.hist(d_in,nbins,log = True,edgecolor="white")
 
-plt.title("Histograma de grados entrantes $d_{in}(v)$ en red entrenada con Edge Priority \n con limitación $d_{in}\leq 640$")
+plt.title("Histograma de grados entrantes $d_{in}(v)$ en red iniciada aleatoriamente \n con restriccion $d_{in}\leq 80$")
 plt.grid(axis='y')
 plt.ylabel("Nodos")
 plt.xlabel("grado $d_{in}$")

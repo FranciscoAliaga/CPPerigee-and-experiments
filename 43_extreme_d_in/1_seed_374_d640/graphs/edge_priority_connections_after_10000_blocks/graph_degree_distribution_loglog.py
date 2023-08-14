@@ -10,9 +10,13 @@ def plot_loghist(x, nbins,cutoff=8.):
   hist, bins = np.histogram(x, bins=bins)
   pairs = [(x,y) for y,x in zip(hist,bins) if y!=0 and x>cutoff]
   xx,yy = zip(*pairs)
-  plt.bar(xx,yy)
+  plt.bar(xx,yy,width=np.array(xx)*0.4)
+  plt.grid(axis='y')
   plt.xscale("log")
   plt.yscale("log")
+  plt.title("Histograma de grados entrantes $d_{in}(v)$ en red entrenada con EdgePriority\n con limitación $d_{in}\leq 640$ en escala loglog")
+  plt.ylabel("Nodos")
+  plt.xlabel("grado $d_{in}$")
   return yy,xx
 
 def get_data(filename):
@@ -47,7 +51,7 @@ def get_degree_data(data):
 data = get_data(sys.argv[1])
 d_out,d_in = get_degree_data(data)
 
-nbins =  10
+nbins =  14
 bins = plot_loghist(d_in,nbins,5.)
 
 for d,U in zip(bins[1],bins[0]): print("d: ",d," -> ",U)

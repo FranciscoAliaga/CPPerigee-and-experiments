@@ -39,7 +39,7 @@ nbins = 14
 
 bins  = plt.hist(d_in,nbins,log = True,edgecolor="white")
 
-plt.title("Histograma de grados entrantes $d_{in}(v)$ en red entrenada con Edge Priority \n con limitación $d_{in}\leq 640$")
+plt.title("Histograma de grados entrantes $d_{in}(v)$ en red entrenada con Edge Priority \n con limitación $d_{in}\leq 80$")
 plt.grid(axis='y')
 plt.ylabel("Nodos")
 plt.xlabel("grado $d_{in}$")
